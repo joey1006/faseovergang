@@ -5,10 +5,16 @@
 //const DB_PASSWORD = '';
 //const DB_NAME = 'exoworld';
 
-$servername = "localhost";
+//$servername = "localhost";
+////xampp local
+//$uid = "root";
+//$pwd = "";
+//$database = "exoworld";
+
+$servername = "rdbms.strato.de";
 //xampp local
-$uid = "root";
-$pwd = "";
-$database = "exoworld";
+$uid = "U2494547";
+$pwd = "abcd1234";
+$database = "DB2494547";
 
 ?>
