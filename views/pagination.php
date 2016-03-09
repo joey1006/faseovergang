@@ -1,4 +1,6 @@
 <?php
+// hier wordt de pagination gemaakt.
+
 echo "<div id='pagination-whole'>";
 echo "<a href='?page=producten&page_nr=1'>".'|<'."</a> ";
 //Ga naar de pagina's

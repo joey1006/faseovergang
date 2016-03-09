@@ -1,7 +1,7 @@
 
 <?php
-
-$num_rec_per_page=3;
+// bepaald hoeveeel producten per pagina zichtbaar zijn
+$num_rec_per_page=5;
 
 if (isset($_GET["page_nr"])) {
     $page  = $_GET["page_nr"];
@@ -18,6 +18,8 @@ if($result->num_rows > 0){
         $list[] = $rows;
     }
 }
+
+// bepaald hoeveel pages erin tottaal zijn
 $sql = "SELECT * FROM products";
 
 $rs_result = $mysqli->query($sql);

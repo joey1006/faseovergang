@@ -1,16 +1,15 @@
 
 <?php
-$servername = "localhost";
-$database = "exoworld";
-
-//xampp local
-$uid = "root";
-$pwd = "";//inloggegevens
+$servername = "rdbms.strato.de";
+$database = "DB2494547";
+$uid = "U2494547";
+$pwd = "abcd1234";//inloggegevens
 $resultArray = array();// array voor de query output
-
-
+//
 $search = $_GET['q']; //let op niet beschermd tegen SQL injectie!!!
 $type = $_GET['type']; //let op niet beschermd tegen SQL injectie!!!
+
+// maakt een connectie met het database
 
 $con = mysqli_connect($servername,$uid,$pwd,$database);
 if (!$con) {

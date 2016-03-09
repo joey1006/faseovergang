@@ -13,23 +13,24 @@
 </html>
 
 <?php
-
+// dit include de files die niet via de switch worden geladen op de site.
 include "config/config.php";
 require_once "config/database.php";
 include "views/nav.php";
-
 include "controller/products.php";
 
 
 
 
 
-//$action = (empty($_GET['action'])) ? '' : $_GET['action'];
+// hier wordt de page en product id uit de url geladen
+// zodat ze gebruikt kunnen worden in een van de files below
 
 $page = (empty($_GET ['page'])) ? '' : $_GET['page'];
 $product_id = (empty($_GET ['product_id'])) ? '' :  $_GET['product_id'];
 
-
+// de switch gebruikt de informatie uit de links van de nav.php
+// om zo de juiste files te include bij de juiste paginalink
 switch($page){
 
     case 'home':
@@ -59,13 +60,7 @@ switch($page){
     default:
 
         break;
-
-
 }
-
-
-
-
 ?>
 
 

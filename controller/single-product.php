@@ -6,6 +6,8 @@
  * Time: 22:10
  */
 
+// query om alles van de tabel products om te zetten in de variable $products
+
 $products = array();
 
 $sql = "SELECT * FROM products";

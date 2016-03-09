@@ -1,4 +1,8 @@
 <?php
+
+// hier word $list omgezet naar product display en world elk product
+//de content van laten zien. hier wordt ook de link gezet dat als je op het plaatje klikt
+// van een bepaald id dat dat id dan in de url wordt gezet.
 echo "<div id='gallery'>";
 
 foreach ($list as $productDisplay){

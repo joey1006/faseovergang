@@ -8,6 +8,8 @@
 //    (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 //}
 
+// maakt een connectie met het database
+
 $mysqli = new mysqli($servername, $uid, $pwd, $database);
 
 if ($mysqli->connect_errno) {

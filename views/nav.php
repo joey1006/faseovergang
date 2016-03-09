@@ -3,7 +3,7 @@
 <head>
 </head>
 
-<!--tip maak overal notes -->
+<!--hier worden de links gezet van de navigatie-->
 <body>
 <div class="container">
 <section class="color-10">

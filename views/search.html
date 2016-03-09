@@ -17,6 +17,8 @@
                 } else {// code for IE6, IE5
                     xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
                 }
+
+
                 xmlhttp.onreadystatechange = function() {
                     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                         if(typeSearch == "list"){
@@ -28,11 +30,14 @@
                         }
                     }
                 }
+
+                // connect met de search.php en verwisselt informatie.
                 xmlhttp.open("GET","controller/search.php?q="+str+"&type="+typeSearch,true);
                 xmlhttp.send();
             }
         }
         //===============================================
+
         function printArray(arr) {
             var out = "";
             var i;
@@ -47,7 +52,7 @@
     </script>
 </head>
 <body>
-
+<!--krijgt de informatie van wat jij in typed by de input-->
 <form>
     <input type = "text" name="search" onKeyUp="showList(this.value, 'list')" placeholder="zoek een product">
 </form>
