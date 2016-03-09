@@ -4,7 +4,8 @@
     <link href="css/products.css" type="text/css" rel="stylesheet">
     <link href="css/about.css" type="text/css" rel="stylesheet">
     <link href="css/search.css" type="text/css" rel="stylesheet">
-    <script src="js/gallery.js"></script>
+    <link href="css/information.css" type="text/css" rel="stylesheet>">
+
 </head>
 <body>
 
@@ -47,7 +48,7 @@ switch($page){
         include "views/search.html";
         break;
     case'information':
-
+        include "views/information.html";
         break;
     case 'about':
         include "views/about.php";
